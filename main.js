@@ -60,12 +60,12 @@ Array(200).fill().forEach(addStar);
 
 // Background
 
-const spaceTexture = new THREE.TextureLoader().load('Retro.png');
+const spaceTexture = new THREE.TextureLoader().load('images/Retro.png');
 scene.background = spaceTexture;
 
 // Avatar
 
-const jeffTexture = new THREE.TextureLoader().load('bhelms.png');
+const jeffTexture = new THREE.TextureLoader().load('images/bhelms.png');
 
 const jeff = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: jeffTexture }));
 
@@ -73,8 +73,8 @@ scene.add(jeff);
 
 // Moon
 
-const moonTexture = new THREE.TextureLoader().load('2k_earth_daymap.jpeg');
-const normalTexture = new THREE.TextureLoader().load('2k_earth_normal_map.tiff');
+const moonTexture = new THREE.TextureLoader().load('images/2k_earth_daymap.jpeg');
+const normalTexture = new THREE.TextureLoader().load('images/2k_earth_normal_map.tiff');
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
